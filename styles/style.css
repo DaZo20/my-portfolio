@@ -1,0 +1,101 @@
+/* Fuente y fondo por defecto */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d1224;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #10172b;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  box-shadow: 0 0 20px rgba(77, 234, 255, 0.4);
+}
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Links de navegación */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4dc3ff;
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: white;
+  color: #0d1224;
+  padding: 0.6rem 1.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ccc;
+}
+
+/* Modo oscuro (simulado) */
+.mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Tema alternativo */
+.dark-mode {
+  background-color: #ffffff;
+  color: #0d1224;
+}
+
+.dark-mode .navbar {
+  background-color: #e5e5e5;
+}
+
+.dark-mode .nav-links a {
+  color: #0d1224;
+}
+
+.dark-mode .btn {
+  background-color: #0d1224;
+  color: white;
+}
+
+.dark-mode .btn:hover {
+  background-color: #333;
+}
