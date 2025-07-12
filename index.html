@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Muñoz Olaya - Android Developer</title>
-  <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <header class="navbar">
-    <div class="logo">👨‍💻 David Muñoz</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Muñoz Olaya - Android Developer</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo" data-lang="logo">👨‍💻 David Muñoz</div>
 
-    <nav class="nav-links">
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#inicio" data-lang="nav-inicio">Inicio</a></li>
+          <li><a href="#sobremi" data-lang="nav-sobremi">Sobre mí</a></li>
+          <li><a href="#proyectos" data-lang="nav-proyectos">Proyectos</a></li>
+          <li><a href="#skills" data-lang="nav-skills">Skills</a></li>
+          <li><a href="#contacto" data-lang="nav-contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a
+          href="CV-DavidMunoz.pdf"
+          class="btn"
+          target="_blank"
+          data-lang="descargar-cv"
+          >Descargar CV</a
+        >
+        <button class="mode-toggle">🌙</button>
+      </div>
+    </header>
+
+    <!-- Secciones -->
+    <section id="sobremi">
+      <h1 data-lang="sobremi-titulo">Sobre mí</h1>
+      <p data-lang="sobremi-texto">
+        Soy un desarrollador Android apasionado por crear experiencias móviles
+        modernas, fluidas y funcionales.
+      </p>
+    </section>
+
+    <section id="proyectos">
+      <h2 data-lang="proyectos-titulo">Proyectos</h2>
+      <!-- Aquí irán tus tarjetas de proyectos -->
+    </section>
+
+    <section id="skills">
+      <h2 data-lang="skills-titulo">Skills</h2>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobremi">Sobre mí</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li>Kotlin / Java</li>
+        <li>Android Studio</li>
+        <li>Jetpack Compose</li>
+        <li>MVVM / Clean Architecture</li>
+        <li>Firebase, Retrofit, Room</li>
       </ul>
-    </nav>
+    </section>
 
-    <div class="actions">
-      <a href="CV-DavidMunoz.pdf" class="btn" target="_blank">Descargar CV</a>
-      <button class="mode-toggle">🌙</button>
+    <section id="contacto">
+      <h2 data-lang="contacto-titulo">Contacto</h2>
+      <p data-lang="contacto-texto">
+        Puedes contactarme a través de
+        <a href="mailto:tuemail@example.com">tuemail@example.com</a>
+      </p>
+    </section>
+
+    <div id="language-selector">
+      <div class="lang-options">
+        <button class="lang-option" data-lang-btn="ca">CA</button>
+        <button class="lang-option" data-lang-btn="es">ES</button>
+        <button class="lang-option" data-lang-btn="en">EN</button>
+      </div>
     </div>
-  </header>
-  <script src="scripts/scripts.js"></script>
-</body>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/lang.js"></script>
+  </body>
 </html>

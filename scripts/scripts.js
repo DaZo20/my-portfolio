@@ -16,7 +16,7 @@ function toggleDarkMode() {
 
 // Actualiza el ícono del botón según el modo
 function updateToggleIcon(button, isDark) {
-  button.textContent = isDark ? '☀️' : '🌙';
+  button.textContent = isDark ? '☀️' : '🌕';
 }
 
 // Aplica el modo guardado (si existe)

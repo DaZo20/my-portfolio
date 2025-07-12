@@ -18,7 +18,7 @@ body {
   margin-top: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
-  box-shadow: 0 0 20px rgba(77, 234, 255, 0.4);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 
 /* Logo */
@@ -99,3 +99,127 @@ body {
 .dark-mode .btn:hover {
   background-color: #333;
 }
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+  background-color: #0d1224;
+  color: white;
+  margin: 2rem 5rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section h2, section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dark-mode section {
+  background-color: #e5e5e5;
+  color: #0d1224;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selector de idioma moderno */
+#language-selector {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #10172b;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  z-index: 1000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#language-selector.expanded {
+  width: auto;
+  height: auto;
+  border-radius: 2rem;
+  padding: 0.5rem 0.8rem;
+}
+
+#language-selector #current-lang {
+  font-size: 1rem;
+  color: white;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+#language-selector .lang-options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+
+#language-selector .lang-option {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  display: none;
+}
+
+#language-selector.expanded .lang-option {
+  display: inline;
+}
+
+/* Dark mode */
+.dark-mode #language-selector {
+  background-color: #e5e5e5;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode #language-selector #current-lang {
+  color: #0d1224;
+}
+
+.dark-mode #language-selector .lang-option {
+  color: #0d1224;
+}
+
+#language-selector:not(.expanded) .lang-option {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#language-selector:not(.expanded) .lang-option:first-child {
+  opacity: 1;
+  pointer-events: auto;
+}
+
