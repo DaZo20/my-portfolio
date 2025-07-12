@@ -1,7 +1,6 @@
 const translations = {
   es: {
     logo: "👨‍💻 David Muñoz",
-    "nav-inicio": "Inicio",
     "nav-sobremi": "Sobre mí",
     "nav-proyectos": "Proyectos",
     "nav-skills": "Skills",
@@ -18,7 +17,6 @@ const translations = {
   },
   en: {
     logo: "👨‍💻 David Muñoz",
-    "nav-inicio": "Home",
     "nav-sobremi": "About Me",
     "nav-proyectos": "Projects",
     "nav-skills": "Skills",
@@ -35,7 +33,6 @@ const translations = {
   },
   ca: {
     logo: "👨‍💻 David Muñoz",
-    "nav-inicio": "Inici",
     "nav-sobremi": "Sobre mi",
     "nav-proyectos": "Projectes",
     "nav-skills": "Habilitats",
